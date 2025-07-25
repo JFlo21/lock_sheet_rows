@@ -19,4 +19,4 @@ jobs:
         env:
           SMARTSHEET_API_TOKEN: ${{ secrets.SMARTSHEET_API_TOKEN }}
         run: |
-          python smartsheet_lock_rows.py
+          python lock_rows.py

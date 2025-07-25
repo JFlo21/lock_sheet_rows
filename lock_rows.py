@@ -2,9 +2,10 @@ import requests
 import datetime
 import pytz
 import csv
+import os
 
 # ========== CONFIGURATION ==========
-API_TOKEN = 'YOUR_SMARTSHEET_API_TOKEN_HERE'  # <-- INSERT YOUR TOKEN HERE
+API_TOKEN = os.getenv('SMARTSHEET_API_TOKEN', 'YOUR_SMARTSHEET_API_TOKEN_HERE')  # Gets from env var or fallback
 SHEET_IDS = [
     "1964558450118532",
     "5905527830695812",

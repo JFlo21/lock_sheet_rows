@@ -3,6 +3,7 @@ name: Lock Smartsheet Rows Weekly
 on:
   schedule:
     - cron: '0 3 * * 1'  # 3:00 UTC Monday == 10:00 PM Sunday America/Chicago
+  workflow_dispatch:  # Allows manual triggering from GitHub UI
 jobs:
   run-script:
     runs-on: ubuntu-latest
